@@ -368,7 +368,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (top_level_doc, project_title, documentation_title,
-     author, project_title, 'Django REST Api to list/filter edx courses',
+     author, project_title, 'One-line description for README and other doc files.',
      'Miscellaneous'),
 ]
 

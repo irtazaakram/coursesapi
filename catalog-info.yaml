@@ -5,7 +5,7 @@ apiVersion: backstage.io/v1alpha1
 kind: ""
 metadata:
   name: 'coursesapi'
-  description: "Django REST Api to list/filter edx courses"
+  description: "One-line description for README and other doc files."
   annotations:
     # (Optional) Annotation keys and values can be whatever you want.
     # We use it in Open edX repos to have a comma-separated list of GitHub user

@@ -103,7 +103,7 @@ CHANGELOG = open(os.path.join(os.path.dirname(__file__), 'CHANGELOG.rst'), encod
 setup(
     name='coursesapi',
     version=VERSION,
-    description="""Django REST Api to list/filter edx courses""",
+    description="""One-line description for README and other doc files.""",
     long_description=README + '\n\n' + CHANGELOG,
     author='edX',
     author_email='oscm@edx.org',

@@ -1,12 +1,12 @@
 .. coursesapi documentation top level file, created by
-   sphinx-quickstart on Thu Apr 13 06:28:55 2023.
+   sphinx-quickstart on Thu Apr 13 12:47:00 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
 coursesapi
 ==========
 
-Django REST Api to list/filter edx courses
+One-line description for README and other doc files.
 
 Contents:
 
