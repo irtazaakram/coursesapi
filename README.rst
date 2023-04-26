@@ -14,7 +14,7 @@ coursesapi
 Purpose
 *******
 
-One-line description for README and other doc files.
+Courses API for Open edX.
 
 TODO: The ``README.rst`` file should start with a brief description of the repository and its purpose.
 It should be described in the context of other repositories under the ``openedx``

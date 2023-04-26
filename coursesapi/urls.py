@@ -1,10 +1,11 @@
 """
 URLs for coursesapi.
 """
-from django.urls import re_path  # pylint: disable=unused-import
-from django.views.generic import TemplateView  # pylint: disable=unused-import
+from django.urls import path
+
+from coursesapi.views import get_courses, CourseListAPIView
 
 urlpatterns = [
-    # TODO: Fill in URL patterns and views here.
-    # re_path(r'', TemplateView.as_view(template_name="coursesapi/base.html")),
+    path("courses/", get_courses, name="courses"),
+    path("courses-list/", CourseListAPIView.as_view(), name="courses_list")
 ]

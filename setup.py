@@ -103,7 +103,7 @@ CHANGELOG = open(os.path.join(os.path.dirname(__file__), 'CHANGELOG.rst'), encod
 setup(
     name='coursesapi',
     version=VERSION,
-    description="""One-line description for README and other doc files.""",
+    description="""Courses API for Open edX""",
     long_description=README + '\n\n' + CHANGELOG,
     author='edX',
     author_email='oscm@edx.org',
@@ -129,4 +129,9 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.8',
     ],
+    entry_points={
+        "lms.djangoapp": [
+            "coursesapi = coursesapi.apps:CoursesapiConfig",
+        ],
+    },
 )

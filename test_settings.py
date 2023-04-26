@@ -7,6 +7,7 @@ Django applications, so these settings will not be used.
 
 from os.path import abspath, dirname, join
 
+ALLOWED_HOSTS = ['*']
 
 def root(*args):
     """
@@ -33,6 +34,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.sessions',
     'coursesapi',
+    'rest_framework',
 )
 
 LOCALE_PATHS = [
