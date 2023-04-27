@@ -3,6 +3,8 @@ coursesapi Django application initialization.
 """
 
 from django.apps import AppConfig
+from openedx.core.djangoapps.plugins.constants import ProjectType
+from edx_django_utils.plugins import PluginURLs
 
 
 class CoursesapiConfig(AppConfig):
@@ -11,13 +13,12 @@ class CoursesapiConfig(AppConfig):
     """
 
     name = "coursesapi"
-
     plugin_app = {
-        "url_config": {
-            "lms.djangoapp": {
-                "namespace": "coursesapi",
-                "regex": "^api/coursesapi/",
-                "relative_path": "urls",
+        PluginURLs.CONFIG: {
+            ProjectType.LMS: {
+                PluginURLs.NAMESPACE: "coursesapi",
+                PluginURLs.REGEX: rf"^api/coursesapi/",
+                PluginURLs.RELATIVE_PATH: "urls",
             }
-        },
+        }
     }
