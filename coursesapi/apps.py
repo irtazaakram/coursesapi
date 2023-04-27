@@ -17,7 +17,7 @@ class CoursesapiConfig(AppConfig):
             "lms.djangoapp": {
                 "namespace": "coursesapi",
                 "regex": "^api/coursesapi/",
-                "relative_path": "api.urls",
+                "relative_path": "urls",
             }
         },
     }
